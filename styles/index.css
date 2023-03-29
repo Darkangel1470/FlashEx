@@ -1,0 +1,44 @@
+:root {
+    --primary: #6610;
+    --hoverbb: #white;
+    --border: 2px;
+    --inputborder: blue;
+    --inpbordersize: 1px solid black;
+  }
+
+
+#front,#back{
+    width: 100%;
+    text-align: center;
+    border: var(--inpbordersize);
+    border-radius: 7px;
+    border-color: var(--inputborder)
+}
+h4{
+    border-bottom: var(--border) solid #6610;
+ }
+
+#addtab:hover, #reviewtab:hover{
+   border-bottom: var(--border) solid white;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+
+#revdiv{
+  width:360px; 
+  height:100%;
+  background-color: cyan;
+}
+
+#card{
+  margin: 10px auto;
+  width:300px; 
+  height:240px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+#mainbody{
+  height: 367px;
+}

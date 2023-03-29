@@ -1,0 +1,16 @@
+{
+    "name": "FlashEx",
+    "version": "1.0.0",
+    "description": "Flashcard extension for chrome",
+    "manifest_version": 3,
+    "permissions": [
+      "tabs",
+      "contextMenus"
+    ],
+    "author": "Nihar",
+    "action": {
+      "default_popup": "view/index.html",
+      "default_title": "Latest Covid Report"
+    }
+  }
+  
