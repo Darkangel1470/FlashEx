@@ -1,10 +1,15 @@
 :root {
+    --primarypurple: #af00e9;
+    --secondarypurple: #7a00a3;
     --primary: #6610;
     --hoverbb: #white;
     --border: 2px;
     --inputborder: blue;
     --inpbordersize: 1px solid black;
   }
+.bg-secondarypurple{
+  background-color: var(--secondarypurple);
+}
 
 
 #front,#back{
@@ -28,7 +33,7 @@ h4{
 #revdiv{
   width:360px; 
   height:100%;
-  background-color: cyan;
+  /* background-color: cyan; */
 }
 
 #card{
@@ -40,5 +45,15 @@ h4{
 }
 
 #mainbody{
-  height: 367px;
+  height: 407px;
+  background-color: var(--primarypurple);
+}
+
+.table>tr{
+  bottom: black 2px;
+
+}
+
+.tabs{
+  background-color: var(--primarypurple);
 }

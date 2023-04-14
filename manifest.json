@@ -7,6 +7,7 @@
       "tabs",
       "contextMenus"
     ],
+    "host_permissions": ["https://*/","http://*/"],
     "author": "Nihar",
     "action": {
       "default_popup": "view/index.html",
