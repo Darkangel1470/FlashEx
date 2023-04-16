@@ -1,7 +1,7 @@
 const addtabpath = "../components/addTab.html"
 const revtabpath = "../components/revtab.html"
 const decktabpath = "../components/decktab.html"
-const path = "http://localhost:3000"
+const path = false ? "http://localhost:3000": "https://charming-yak-shoulder-pads.cyclic.app";
 var currentcard;
 
 $(document).ready(async function() {
