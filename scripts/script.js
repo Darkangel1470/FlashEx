@@ -1,7 +1,7 @@
 const addtabpath = "../components/addTab.html"
 const revtabpath = "../components/revtab.html"
 const decktabpath = "../components/decktab.html"
-const path = false ? "http://localhost:3000": "https://charming-yak-shoulder-pads.cyclic.app";
+const path = false ? "http://localhost:3000": "https://weak-plum-skunk-shoe.cyclic.app/";
 var currentcard;
 
 $(document).ready(async function() {
@@ -62,11 +62,7 @@ function decktabsetup(){
 function revtabsetup(){
     // getlist();
     $("#difftab").hide();
-    if(cookieToArray()[0].length >1){
-        showfront();
-    }else{
-        $("#cardFront").text("You dont have any card yet");
-    }
+    showfront();
     $(showback).click(showBack);
     $(backbtn).click(showfront).hide();
     $(".diffbtn").click(diffhandler);
@@ -80,7 +76,7 @@ function revtabsetup(){
 async function showfront(){
     $("#difftab").hide();
     $(backbtn).hide();
-    if(cookieToArray()[0].length >1){
+    // if(true)
         currentcard = await gettodaycookie();
         if(currentcard.length==0){
             $("#cardFront").text('Congrats!! You are done for today');
@@ -89,18 +85,16 @@ async function showfront(){
             $("#cardFront").text(currentcard['front']);        
             $("#showtab").show();   
         }
-    }else{
-        $("#cardFront").text("You dont have any card yet");        
-        $("#showtab").hide(); 
-    }
+    // }else{
+    //     $("#cardFront").text("You dont have any card yet");        
+    //     $("#showtab").hide(); 
+    // }
 }
 function showBack(){
-    if(cookieToArray()[0].length >1){
-        $("#cardFront").text(currentcard['back']);
-        $("#difftab").show();
-    }else{
-        $("#cardFront").text("You dont have any card yet");
-    }
+
+    $("#cardFront").text(currentcard['back']);
+    $("#difftab").show();
+    
     $(backbtn).show();
     $("#showtab").hide();
 }
