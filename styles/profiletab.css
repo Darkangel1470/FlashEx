@@ -1,0 +1,10 @@
+#profiletabdiv{
+    background: #FFFFFF;
+    border-radius: 17px;
+    padding: 10px;
+    /* width: auto; */
+}
+
+div#profiletabdiv>* {
+    margin-top: 10px;
+}

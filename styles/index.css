@@ -7,11 +7,20 @@
     --inputborder: blue;
     --inpbordersize: 1px solid black;
   }
+.bg-primarypurple{
+  background-color: var(--primarypurple);
+}
 .bg-secondarypurple{
   background-color: var(--secondarypurple);
 }
-
-
+#navtab{
+  padding: 10px;
+}
+.navtabdiv{
+  border: 1px solid black;
+  border-radius: 17px;
+  background-color: var(--secondarypurple);
+}
 #front,#back{
     width: 100%;
     text-align: center;
@@ -23,19 +32,10 @@ h4{
     border-bottom: var(--border) solid #6610;
  }
 
-#addtab:hover, #reviewtab:hover{
-   border-bottom: var(--border) solid white;
-   padding-left: 10px;
-   padding-right: 10px;
-}
-
-
 #revdiv{
   width:360px; 
   height:100%;
-  /* background-color: cyan; */
 }
-
 #card{
   margin: 10px auto;
   width:300px; 
@@ -43,17 +43,18 @@ h4{
   background-color: white;
   border-radius: 15px;
 }
-
 #mainbody{
   height: 407px;
   background-color: var(--primarypurple);
+  padding: 10px;
 }
-
 .table>tr{
   bottom: black 2px;
-
 }
-
 .tabs{
   background-color: var(--primarypurple);
+}
+/* styles for login page */
+.input-group-text{
+  height: 38px !important;
 }

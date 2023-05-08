@@ -1,0 +1,51 @@
+
+<body id='bd'>
+
+	<div class="alert alert-warning" id="warmingalert" role="alert" hidden>
+		User with this email already exist
+	</div>
+	<div class="container">
+	<div class="d-flex justify-content-center h-100">
+		<div class="card" style='height:400px'>
+			<div class="card-header">
+				<h3>Register</h3>
+			</div>
+			<div class="card-body">
+				<form method="post">
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
+						</div>
+						<input required id="email" type="email" class="form-control" name="email"  placeholder="email address">
+					</div>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-key"></i></span>
+						</div>
+						<input required id="cpass" type="password" class="form-control" name="pass" placeholder="password">
+					</div>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-key"></i></span>
+						</div>
+						<input required id="pass" type="password" class="form-control" name="cpass"  placeholder="confirm password">
+					</div>
+					<div class="row align-items-center remember">
+						<input  ie="rememberme" type="checkbox" name="rememberme">Remember Me
+					</div>
+					<div class="form-group">
+						<input ie="btn" type="button" value="Register" class="btn float-end login_btn">
+					</div>
+				</form>
+			</div>
+			<div class="card-footer">
+				<div class="d-flex justify-content-center links">
+					Already have an account?<a href="#" id='login'>Sign In</a>
+				</div>
+				<div class="d-flex justify-content-center">
+					<a href="#">Forgot your password?</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

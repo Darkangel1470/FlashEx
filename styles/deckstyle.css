@@ -1,0 +1,32 @@
+:root{
+    --borderrad: 17px;
+}
+
+
+
+.fronttextdiv{
+    background: white;
+    border-radius: var(--borderrad);
+    font-size: 16px;
+    margin-left:-10px;
+    padding-left:10px;
+    height:37px;
+    padding:10px 0px 0px 10px;
+}
+
+
+.backtextdiv{
+    background: #DDDDDD;
+    border-radius: 17px;
+    font-size:16px;
+    text-align: left;   
+    padding-left:10px;
+}
+
+
+.datediv{
+    background: white;
+    border-radius: 17px;
+    font-size: 10px;
+    text-align: center;
+}

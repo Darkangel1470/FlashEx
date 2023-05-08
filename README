@@ -1,0 +1,22 @@
+
+Application logic 
+
+START
+    IF LOGGED IN
+        SHOW ADD TAB
+        SHOW NAV TAB 
+        IF ADD CARD CLICKED 
+            LOAD ADD CARD TAB
+        IF REVIEW CARD CLICKED 
+            LOAD REVIEW CARD TAB
+        IF DECK CLICKED 
+            LOAD DECK TAB
+        IF SETTINGS CLICKED 
+            LOAD SETTINGS TAB
+        IF PROFILE CLICKED
+            LOAD PROFILE TAB
+    IF NOT LOOGED IN 
+        SHOW LOGIN PAGE
+        HIDE NAV TAB
+
+
